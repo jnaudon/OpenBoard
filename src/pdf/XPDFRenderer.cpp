@@ -209,7 +209,7 @@ QImage* XPDFRenderer::createPDFImageHistorical(int pageNumber, qreal xscale, qre
 #ifdef USE_XPDF
         mSplashHistorical->startDoc(mDocument->getXRef());
 #else
-        mSplash->startDoc(mDocument);
+        mSplashHistorical->startDoc(mDocument);
 #endif
         int rotation = 0; // in degrees (get it from the worldTransform if we want to support rotation)
         bool useMediaBox = false;
